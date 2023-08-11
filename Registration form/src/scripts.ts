@@ -14,19 +14,20 @@ type Post = {
 const addPostsHTML = (post: Post) => {
     const postHTML = `
         <div>
-        <h1>${post.title}</h1>
-        <p>${post.author}</p>
+        <h1 class="js-posts">${post.title}</h1>
+        <p class="js-posts">${post.author}</p>
         </div>
         <br><br>
         `;
+        posts.innerHTML += postHTML;
 }
 
-axios.get("http://localhost:3004/posts").then((res) => {
-    console.log(res.data);
-    res.data.forEach((post: Post) => {
-        addPostsHTML(post)
+axios.get("http://localhost:3004/posts").then((response) => {
+    console.log(response.data);
+    response.data.forEach((post: Post) => {
+        addPostsHTML(post);
     });    
-})
+});
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -39,9 +40,9 @@ form.addEventListener("submit", (e) => {
         finalData[pair[0]] = pair[1];
     }
     
-    axios.post("http://localhost:3004/posts", finalData).then((res) => {
-        const post: Post = res.data;
-        res.data.forEach((post: Post) => {
+    axios.post('http://localhost:3004/posts' , finalData).then((response) => {
+        const post: Post = response.data;
+        response.data.forEach((post: Post) => {
             addPostsHTML(post)
         });   
     });

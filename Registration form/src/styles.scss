@@ -70,8 +70,21 @@ h1 {
 }
 
 .submitbutton {
+  background-color: rgb(165, 84, 205, 0.8);
   width: 250px;
   height: 50px;
   font-size: 20px;
   border: 2px solid black;
+  cursor: pointer;
+  transition: opacity, .5s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.js-posts {
+  font-size: 25px;
+  margin: 10px 5px;
+  text-align: left;
 }
