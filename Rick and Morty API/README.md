@@ -8,6 +8,6 @@ npm i
 
 When all packages have been installed, run:
 ```
-npm start
+npm run start
 ```
 Open your browser with designated localhost address.
