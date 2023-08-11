@@ -1,9 +1,163 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "asf",
+      "author": "asf",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asf",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 2
+    },
+    {
+      "title": "asga",
+      "author": "asg",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asasv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 3
+    },
+    {
+      "title": "fas",
+      "author": "vasv",
+      "email": "sdgsd@sdgs.vl",
+      "password": "casv",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 4
+    },
+    {
+      "title": "fas",
+      "author": "vasv",
+      "email": "sdgsd@sdgs.vl",
+      "password": "casv",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 5
+    },
+    {
+      "title": "fas",
+      "author": "vasv",
+      "email": "sdgsd@sdgs.vl",
+      "password": "casv",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 6
+    },
+    {
+      "title": "fas",
+      "author": "vasv",
+      "email": "sdgsd@sdgs.vl",
+      "password": "casv",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 7
+    },
+    {
+      "title": "fas",
+      "author": "vasv",
+      "email": "sdgsd@sdgs.vl",
+      "password": "casv",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 8
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 9
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 10
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 11
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 12
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 13
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 14
+    },
+    {
+      "title": "sdsd",
+      "author": "sdb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asv",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 15
+    },
+    {
+      "title": "asf",
+      "author": "asf",
+      "email": "nasvnsv@sdksd",
+      "password": "sfs",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 16
+    },
+    {
+      "title": "asf",
+      "author": "bb",
+      "email": "sdgsd@sdgs.vl",
+      "password": "asas",
+      "maleorfemale": "male",
+      "terms": "on",
+      "id": 17
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }

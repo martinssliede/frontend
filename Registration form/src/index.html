@@ -14,7 +14,7 @@
 </head>
     <body>
         <div class="main">
-        <form>
+        <form class="form js-form">
             <div class="title">
                 <h1>
                     Registration form
@@ -27,7 +27,7 @@
                         <p>
                             First name
                         </p>
-                        <input class="input1" type="text" name="firstname" placeholder="Name" required value="">
+                        <input id="firstname" class="input1" type="text" name="title" placeholder="Name" required value="">
                     </label>
                 </div>
                 <div class="lastname">
@@ -35,7 +35,7 @@
                         <p>
                             Last name
                         </p>
-                        <input class="input1" type="text" name="lastname" placeholder="Last name" required value="">
+                        <input id="lastname" class="input1" type="text" name="author" placeholder="Last name" required value="">
                     </label>
                 </div>
             </div>
@@ -62,11 +62,11 @@
             <div class="gender">
                 <p>Gender</p>
                 <label>
-                    <input class="input2" type="radio" name="maleorfemale" value="male">Male
+                    <input required class="input2" type="radio" name="maleorfemale" value="male">Male
                     <br>
                 </label>
                 <label>
-                    <input class="input2" type="radio" name="maleorfemale" value="female">Female
+                    <input required class="input2" type="radio" name="maleorfemale" value="female">Female
                 </label>
             </div>
             
@@ -90,11 +90,11 @@
             </div>
 
             <div class="submit">
-                <button class="submitbutton" type="submit">Submit</button>
+                <button class="submitbutton js-submit" type="submit" id="submit">Submit</button>
             </div>
         </div>
         </form>
-        
+        <div class="js-form"></div>
         
         <script src="/scripts.js"></script>
     </body>

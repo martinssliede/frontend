@@ -1,10 +1,50 @@
-import $ from 'jquery';
-import sum from './utils/sum/sum';
+import axios from 'axios';
 
-console.log('Ready for coding');
+const form = document.querySelector<HTMLFormElement>(".js-form");
+const posts = document.querySelector(".js-posts");
+const submitButton = document.querySelector<HTMLButtonElement>(".js-submit");
 
-console.log('Body jQuery node:', $('body'));
-console.log('Body javascript node:', document.querySelector('body'));
-console.log('2 + 3 =', sum(2, 3));
+type DataToSend = {[key: string]: unknown};
+type Post = {
+    author: string
+    id: number
+    title: string 
+}
 
+const addPostsHTML = (post: Post) => {
+    const postHTML = `
+        <div>
+        <h1>${post.title}</h1>
+        <p>${post.author}</p>
+        </div>
+        <br><br>
+        `;
+}
 
+axios.get("http://localhost:3004/posts").then((res) => {
+    console.log(res.data);
+    res.data.forEach((post: Post) => {
+        addPostsHTML(post)
+    });    
+})
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    submitButton.disabled = true;
+    const formData = new FormData(form);
+
+    const finalData: DataToSend = {};
+
+    for (const pair of formData.entries()) {
+        finalData[pair[0]] = pair[1];
+    }
+    
+    axios.post("http://localhost:3004/posts", finalData).then((res) => {
+        const post: Post = res.data;
+        res.data.forEach((post: Post) => {
+            addPostsHTML(post)
+        });   
+    });
+    form.reset();
+    submitButton.disabled = false;
+})
