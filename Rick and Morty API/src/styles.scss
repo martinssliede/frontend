@@ -1,77 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
 body {
-  background-color: rgba(226, 216, 202, 0.328);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 400;
+  background-color: antiquewhite;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
   font-size: 16px;
-  display: flex;
-  justify-content: center;
+  margin: 0;
 }
 
-.main  {
-  background-color: rgba(185, 184, 159, 0.625);
-  border: 5px solid rgb(165, 84, 205);
-  border-radius: 20px;
-  box-shadow: 5px 10px ;
-  margin: 20px;
-  width: 700px;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
+.title {
+  font-size: 30px;
   text-align: center;
-  font-size: 40px;
-  font-weight: 400;
 }
 
-.box1, .box2 {
+.character__wrapper {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
   padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.input1 {
-  border: 2px solid black;
+.character {
   width: 250px;
-  padding: 5px;
-}
-
-.input::placeholder { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-.gender {
-  padding-left: 60px;
-}
-.input2 {
-  margin: 0px 10px 10px 0px;
-}
-
-.location {
-  padding-left: 60px;
-  display: flex;
-}
-#dropdown {
-  width: 560px;
-  border: 2px solid black;
-  padding: 5px;
-}
-
-.terms {
-  padding: 16px 0px 0px 60px;
-}
-.termsbox {
-  margin: 0px 10px 10px 0px;
-}
-
-.submit {
+  padding: 10px;
+  border: 3px solid gold;
+  border-radius: 5px;
   text-align: center;
-  padding: 40px 20px;
+
 }
 
-.submitbutton {
-  width: 250px;
-  height: 50px;
-  font-size: 20px;
-  border: 2px solid black;
+.character__image {
+  width: 100%;
 }
+
+.character__name {
+  padding: 10px 0;
+  color: black;
+}
+
