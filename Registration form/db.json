@@ -4,6 +4,15 @@
       "id": 1,
       "title": "Name and last name",
       "author": "will save here"
+    },
+    {
+      "title": "Name",
+      "author": "Last name",
+      "email": "mmm@iqsfas.as",
+      "password": "9138gdgv ",
+      "maleorfemale": "female",
+      "terms": "on",
+      "id": 2
     }
   ],
   "comments": [
